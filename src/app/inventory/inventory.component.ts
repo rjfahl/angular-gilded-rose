@@ -1,10 +1,21 @@
 import { Component } from '@angular/core';
-import { items } from '../../assets/items';
 
-export interface Item {
+export interface ItemInterface {
   name: string;
   sellIn: number;
   quality: number
+}
+
+export class Item implements ItemInterface {
+  name: string = '';
+  sellIn: number = 0;
+  quality: number = 0;
+
+  constructor(name: string, sellIn: number, quality: number){
+    this.name = name;
+    this.sellIn = sellIn;
+    this.quality = quality;
+  }
 }
 
 @Component({
@@ -13,7 +24,11 @@ export interface Item {
   styleUrls: ['./inventory.component.scss']
 })
 export class InventoryComponent {
-  items: Array<Item> = items;
+  items: Array<Item> = [
+    new Item("test item 10", 10, 10),
+    new Item("test item 20", 20, 15),
+    new Item("test item 30", 30, 20)
+  ];
 
   updateQuality() {
     for (var i = 0; i < this.items.length; i++) {
