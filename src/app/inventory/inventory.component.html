@@ -2,24 +2,24 @@
   <h1>Inventory</h1>
   <br />
   <div class="inventory-item">
-    <div>
+    <div class="item-name bold">
       Name
     </div>
-    <div>
+    <div class="item-sellIn bold">
       Sell In (Days)
     </div>
-    <div>
+    <div class="item-quality bold">
       Quality
     </div>
   </div>
   <div *ngFor="let item of items" class="inventory-item">
-    <div>
+    <div class="item-name">
       {{item.name}}
     </div>
-    <div>
+    <div class="item-sellIn">
       {{item.sellIn}}
     </div>
-    <div>
+    <div class="item-quality">
       {{item.quality}}
     </div>
   </div>

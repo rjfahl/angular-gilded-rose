@@ -25,9 +25,13 @@ export class Item implements ItemInterface {
 })
 export class InventoryComponent {
   items: Array<Item> = [
-    new Item("test item 10", 10, 10),
-    new Item("test item 20", 20, 15),
-    new Item("test item 30", 30, 20)
+    new Item("Aged Brie", 20, 10),
+    new Item("Backstage passes to a TAFKAL80ETC concert", 20, 15),
+    new Item("Sulfuras, Hand of Ragnaros", 30, 48),
+    new Item("Soap On A Rope", 30, 25),
+    new Item("103 Pound Mightfish", 30, 4),
+    new Item("Belbi's Eyesight Enhancing Romance Goggles", 30, 1),
+    new Item("Conjured Healthstones", 30, 20) // new conjured item
   ];
 
   updateQuality() {

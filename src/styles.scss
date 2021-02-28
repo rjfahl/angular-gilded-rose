@@ -20,7 +20,7 @@ body {
     padding: 12px 24px;
     border-radius: 4px;
     margin: 0px 120px;
-    min-width: 600px;
+    min-width: 800px;
 
     h1 {
       margin: 0px;
@@ -36,11 +36,30 @@ body {
       color: white;
       border-radius: 4px;
     }
+    
+    .bold {
+      font-weight: bolder;
+    }
 
     .inventory-item {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 8px 0px;
+      
+      .item-name {
+        width: 60%;
+      }
+
+      .item-sellIn {
+        width: 20%;
+        text-align: center;
+      }
+
+      .item-quality {
+        width: 20%;
+        text-align: center;
+      }
     }
   }
 }
