@@ -8,7 +8,7 @@ The primary learning objectives of the Gilded Rose are:
 
 Additional learning objectives for lengthy code dojo's
  - learning to work and develop in an Angular project
- - refactoring html templates with A11y in mind
+ - improving site design with A11y in mind
 
  Here are the instructions for The Gilded Rose, also found on the home page of the application when running `ng serve`:
 
@@ -32,7 +32,15 @@ Additional learning objectives for lengthy code dojo's
 > Feel free to make any changes to the UpdateQuality method and add any new code as long as everything still works correctly. However, do not alter the Item class or Items property as those belong to the goblin in the corner who will insta-rage and one-shot you as he doesn’t believe in shared code ownership (you can make the UpdateQuality method and Items property static if you like, we’ll cover for you).
 
 Additional feature request time permitting:
- - Improve design and A11y of the home and inventory pages
+ - Add navigation to go between the instructions page and the inventory
+ - Make things ADA compliant
+    - semantic HTML structure
+    - heading levels
+    - buttons vs links
+    - focus states
+    - etc.
+
+*Note: a number of poor practices have been included to facilitate refactoring opportunities
 
 ---
 

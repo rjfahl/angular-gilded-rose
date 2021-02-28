@@ -2,7 +2,7 @@
 body {
   margin: 0px;
 
-  main {
+  .main {
     background-image: url("../src/assets/the-gilded-rose2.jpg");
     background-size: cover;
     display: flex;
@@ -22,13 +22,12 @@ body {
     margin: 0px 120px;
     min-width: 800px;
 
-    h1 {
+    h2, h3 {
       margin: 0px;
       padding: 0px;
       font-size: 48px;
     }
 
-    button,
     a {
       margin: 16px auto;
       padding: 8px 16px;

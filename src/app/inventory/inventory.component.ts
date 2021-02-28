@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
-export interface ItemInterface {
+interface ItemInterface {
   name: string;
   sellIn: number;
   quality: number
 }
 
-export class Item implements ItemInterface {
+class Item implements ItemInterface {
   name: string = '';
   sellIn: number = 0;
   quality: number = 0;
@@ -31,7 +31,7 @@ export class InventoryComponent {
     new Item("Soap On A Rope", 30, 25),
     new Item("103 Pound Mightfish", 30, 4),
     new Item("Belbi's Eyesight Enhancing Romance Goggles", 30, 1),
-    new Item("Conjured Healthstones", 30, 20) // new conjured item
+    new Item("Conjured Healthstones", 30, 20) // new conjured item - not updating properly
   ];
 
   updateQuality() {
