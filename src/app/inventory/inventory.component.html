@@ -1,0 +1,27 @@
+<div class="gilded-rose-content">
+  <h1>Inventory</h1>
+  <br />
+  <div class="inventory-item">
+    <div>
+      Name
+    </div>
+    <div>
+      Sell In (Days)
+    </div>
+    <div>
+      Quality
+    </div>
+  </div>
+  <div *ngFor="let item of items" class="inventory-item">
+    <div>
+      {{item.name}}
+    </div>
+    <div>
+      {{item.sellIn}}
+    </div>
+    <div>
+      {{item.quality}}
+    </div>
+  </div>
+  <button (click)="updateQuality()">Update Quality</button>
+</div>>

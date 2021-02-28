@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+
+  main {
+    background-image: url("../src/assets/the-gilded-rose2.jpg");
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gilded-rose-content {
+    display: flex;
+    flex-flow: column;
+    font-size: 18px;
+    background-color: white;
+    opacity: .8;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin: 0px 120px;
+    min-width: 600px;
+
+    h1 {
+      margin: 0px;
+      padding: 0px;
+      font-size: 48px;
+    }
+
+    button,
+    a {
+      margin: 16px auto;
+      padding: 8px 16px;
+      background-color: #355c7d;
+      color: white;
+      border-radius: 4px;
+    }
+
+    .inventory-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
